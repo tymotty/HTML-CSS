@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+     background-image: linear-gradient(to top, rgba(128, 128, 128, 0.422), rgba(128, 128, 128, 0.563), gray, gray, black, black);
+}
+        #Titulo {
+            text-align: center;
+        }
+        h1 {
+            color: #C7C7C7;
+        }
+        h2 {
+        background-image:linear-gradient(to right,#E0C98A,#B08A3C,#6E5523);
+        padding: 15px;
+        margin-top: -5px;
+        margin-left: -5px;
+        margin-right: -5px;
+        }
+        h3 {
+            background-image:linear-gradient(to right,#E6D3A3 ,#E6D3A3,#6E5523);
+            height: 28px;
+            width: 1103px;
+            margin: 5px;
+            margin-left: -5px;
+            padding-left: 7px;
+            padding-top: 5px;
+        }
+        header{
+            background-color:#0D0D0D;
+            margin: -9px;
+            margin-top: -25px;
+            padding:7px;
+            margin-bottom: 0px;
+        }
+        #Menu {
+            margin: 15px;
+            text-align: center;
+            color: #C7C7C7;
+        }
+        #DS{
+            text-decoration: none;
+            padding-left: 198px;
+            padding-right: 198px;
+            margin: auto;
+        }
+        a:hover {
+            color:#C89B3C;
+            background-color:  #6E5523;
+            border-radius: 5px;
+        }
+        a { 
+            color:#C7C7C7;
+        }
+        main {
+            background-color:#D1D1D1;
+            margin: auto;
+            width: 1100px;
+            padding: 5px;
+        }
+        article > p {
+            background-color:#242424;
+            padding: 7px;
+            margin-top: 7px;
+            margin-left: 10px;
+            margin-right: 10px;  
+            border-radius: 10px 0px;
+        }
+        iframe {
+            text-align: center;
+        }
+        #Personagem{
+            width: auto; 
+            display: block;
+        }
+        img{
+            height: 300px;
+            width: 548px;
+        }
+        p { background-color:#242424;
+            padding: 7px;
+            margin-top: 7px;
+            margin-left: 10px;
+            margin-right: 10px;  
+            border-radius: 10px 0px;
+            color:#8F8F8F;
+
+        }
+        hr {
+            width: 1518px;
+            margin-left: -5px;
+        }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+<!---------------------------------------------------------------------------------->
+<!---------------------------------Videos Internos---------------------------------->
+<!---------------------------------------------------------------------------------->
+
+    <h1>Videos Hospedados no Proprio Servidor</h1>
+    <p>Videos Hospedados no proprio servidor podem sair caro para o cliente, por conta que cada pessoa que acessa o site usa por exemplo 9mb para baixar o video e o site tem uma frequencia de 1000 pessoas, isto da por volta de 8.5 G.</p>
+  <ul>
+    <li>Tag para adicionar o Video: video</li>
+    <li>Para ajustar o tamanho do video tag: width</li>
+    <li>Para aparecer o controle tag: controls</li>
+    <li>Para fazer uma sequencia, tipo o navegador não é compativel com mp4 e reproduzir outro tipo, fazemos o seguite</li>
+    <ul>
+        <li>usamos a tag "video" como base</li>
+        <li>depois colocamos dentro da tag os source src</li>
+        <li>na tagde source src coloamos em ordem de reproducao, e colomos o tipo de arquivo video/mkv ou video/mp4 ou video/webm</li>
+    </ul>
+    <li>para colocar uma capa no video colocamos a tag "poster"</li>
+  </ul>
+
+<!---------------------------------------------------------------------------------->
+<!--------------------------------------Codigo-------------------------------------->
+<!---------------------------------------------------------------------------------->
+
+  <video controls>
+    <source src="Video/VideoWEBM.webm" type="video/webm">
+    <source src="Video/VideoMKV.mkv" type="video/mkv">
+    <source src="Video/Videomp4.mp4" type="video/mp4">
+    <p>Seu Navegador não possui compatibulidade com reprodução do video</p>
+  </video>
+<hr>
+<!---------------------------------------------------------------------------------->
+<!---------------------------------Videos Externos---------------------------------->
+<!---------------------------------------------------------------------------------->
+<h1>Videos Externos </h1>
+  <p>videos externos são videos do youtube, Vimeo e outros,</p>
+  <ul>
+    <li> a unica coisa que fazer é ir no video e clicar em compartilha, em compartilhar ten una opcao incorporar e copiar o codigo</li>
+    <li>Caso comece a dar erro, tente no vscode, clicar com o botao direito de index.html e abrir com live server</li>
+  </ul>
+<!---------------------------------------------------------------------------------->
+<!--------------------------------------Codigo-------------------------------------->
+<!---------------------------------------------------------------------------------->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eIvSQUq1W1c?si=EqKBt3QciHynOdp1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+        background-color: #2de1e1;
+    font-family:Arial;
+    font-size: 15px;
+     }
+    h1{ 
+       font-style: oblique;
+       color: black; 
+    }
+        h2{
+            color: black;
+        }
+        p{
+            text-align: justify;
+        }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="" href="">
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>abrir em diversos dispositivos
+        <hr>
+    Tags e funcoes: </p>
+    <ol>
+        <li>picture: cria a base onde vai trabalhar</li>
+        <li>img src"img q quer": esta sera a sua primeira imagem, onde tem que ser a grande</li>
+        <li>source media"max-width: ""aqui vc coloca quando pixer a pagina tem que ficar para a img aparecer asim: 1050px"" srcset: ""imagem q quer"" type: "" se a img foir png fica assim: image/png"" <hr> ela tem a funcao de de quando a tela for menor q o a imagem ela vai mudar para esta</li>
+        <li>ource media"max-width: ""aqui vc coloca quando pixer a pagina tem que ficar para a img aparecer asim: 750px"" srcset: ""imagem q quer"" type: "" se a img foir png fica assim: image/png"" <hr> ela tem a funcao de de quando a tela for menor q o a imagem ela vai mudar para esta</li>
+    </ol>
+    <p> vai ficar assim no final:</p>
+    <p>
+        picture
+            source media="(max-width: 750px)" srcset="Imagens/ImagemP.png" type="image/png"
+            source media="(max-width: 1050px)" srcset="Imagens/ImagemM.png" type="image/png"
+        
+            img src="Imagens/IMAGEM-G.png" alt="Imagem flexivel"
+        
+        picture
+    </p>
+    
+
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/ImagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/ImagemM.png" type="image/png">
+        
+        <img src="Imagens/IMAGEM-G.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Repreoduzindo audio</h1>
+    <p>Teste de reproducao de audio
+        <hr>
+        Tags e funcicoes:</p>
+        <audio preload="none" autoplay controls loop>
+            <source src="Audio/audio.mp3" type="audio/mpeg">
+            <source src="Audio/audio.ogg" type="audio/ogg">
+            <source src="Audio/audio.wav" type="audio/wav">
+            <p>infelizmente seu navegador nao consegue reproduzir audio</p>
+        </audio>
+    
+   
+
+</body>
+</html>  

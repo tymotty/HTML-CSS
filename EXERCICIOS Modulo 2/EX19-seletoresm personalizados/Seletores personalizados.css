@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(94, 105, 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 { 
+ color: black;
+}
+h1#Principal {
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+    padding: 40px;
+    margin: top;
+}
+
+h1.Ensino { 
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+}
+h2 {
+    color: black;
+}
+
+.Basico{
+    font-weight: bolder; 
+}
+
+.intermediario {color: (67, 67, 67)
+}
+
+.Avancado {color: (67, 67, 67)
+}
+
+p {
+    color:rgb(61, 61, 61);
+}
