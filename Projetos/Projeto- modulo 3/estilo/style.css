@@ -24,13 +24,21 @@ header > p {
     color: white;
     text-decoration: none;
     padding-bottom: 50px;
+    font-size: 20px;
 }
 a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-
+#img1 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+#img2 {
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
+}
 a:hover {
     text-decoration: underline;
 }
