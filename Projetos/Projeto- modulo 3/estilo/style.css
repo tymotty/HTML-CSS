@@ -1,7 +1,43 @@
 @charset "UTF-8";
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+header > p {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+} 
