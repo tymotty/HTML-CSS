@@ -34,7 +34,22 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+.normal {
+    background-color: white;
+}
+.img {
+    background-color: ;
+}
+.img > p {
+    background-color: rgba(0, 0, 0, 0.203) ;
+    width: 400px;
+}
 footer {
     background-color: black;
     color: white;
