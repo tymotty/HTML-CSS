@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
 :root {
     --CORfontprincipal:  #a1adc3; 
     --CORfontehover: #ffffff;
     --CORFP:#0F172B ;
-
-
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -22,11 +20,13 @@ header {
     width: auto;
     height: 15vh;
 }
+
 nav {
     display: flex;
     justify-content: center;
     height: 15vh;
 }
+
 nav > ul {
     display: flex;
     margin-left: 5vw;
@@ -36,12 +36,14 @@ nav > ul {
     padding: 0;
     align-items: center;
 }
+
 .logo {
     color: #ffffff;
     margin-right: 35vw ;
     font-family: "Montserrat";
     font-size: 35px;
 }
+
 li > a {
     color: var(--CORfontprincipal);
     text-decoration: none;
@@ -49,6 +51,27 @@ li > a {
     font-family: "Inter";
     font-size: 19px;
 }
+
 a:hover {
     color: var(--CORfontehover);
+}
+/*---------------------------------------------------------------------------------*/
+/*--------------------------------Conteudo Inicio----------------------------------*/
+/*---------------------------------------------------------------------------------*/
+.Cinicio {
+    width: 100vw;
+    height: 100vh;
+    background-image: rgb(0, 0, 0) rgb(117, 117, 117) ;
+}
+#titulo{
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--CORFP);
+    text-align: center;
+}
+#subtitulo {
+    font-family: "Inter";
+    font-weight: 300;
+    color: var(--CORFP);
+     text-align: center;
 }
