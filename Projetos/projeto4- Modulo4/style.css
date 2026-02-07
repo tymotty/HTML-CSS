@@ -10,6 +10,8 @@
     --CORfontprincipal:  #a1adc3; 
     --CORfontehover: #ffffff;
     --CORfundohover: #1a2643 ;
+
+    --CORF2: grey ;
     --CORFP:#0F172B ;
     --CORshadow: #c8c8c8;
 }
@@ -23,6 +25,7 @@ header {
     width: auto;
     height: 15vh;
     z-index: 1000;
+    background-attachment: scroll;
     
 }
 
@@ -55,10 +58,12 @@ li > a {
     text-transform: capitalize;
     font-family: "Inter";
     font-size: 19px;
+
 }
 
 a:hover {
     color: var(--CORfontehover);
+
 }
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------Conteudo Inicio----------------------------------*/
@@ -66,7 +71,7 @@ a:hover {
 .Cinicio {
     padding-top: 0;
     margin-top: 0;
-    width: 99.5vw;
+    width: 99vw;
     height: 85vh;
 
     background-image: 
@@ -98,12 +103,14 @@ a:hover {
     text-align: center;
     margin-bottom: 3.8vh;
 }
-#subtitulo {
+p {
     font-size: 1.3rem;
     font-family: "Inter";
     font-weight: 300;
     color: var(--CORFP);
     text-align: center;
+}
+#subtitulo {
     margin-bottom: 3.8vh;
 }
 .Botao01 {
@@ -132,4 +139,60 @@ a:hover {
 
 .Botao01:hover {
     background-color:var(--CORfundohover);
+
+}
+/*---------------------------------------------------------------------------------*/
+/*--------------------------------Conteudo Sobre-----------------------------------*/
+/*---------------------------------------------------------------------------------*/
+.section01 {
+  padding-top: 0;
+    margin-top: 0;
+    width: 99vw;
+    height: 85vh;
+
+    background-color: var(--CORfontehover);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ancora {
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 1rem;
+    color: var(--CORfontprincipal);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Inter";
+    color: var(--CORFP);
+}
+.block {
+    display: grid ;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color:var(--CORF2) ;
+    gap: 15px;
+    height: 25vh;
+    width: 25vw;
+}
+#conteiner01 {
+
+}
+#conteiner02 {
+    
+}
+#conteiner03{
+    
 }
