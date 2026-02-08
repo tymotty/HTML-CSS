@@ -164,12 +164,7 @@ p {
     text-align: center;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  align-items: stretch;
-}
+
 
 .ancora {
     font-weight: 500;
@@ -184,17 +179,65 @@ h2 {
     font-family: "Inter";
     color: var(--CORFP);
 }
-.block {
-  height: 100%;
-  padding: 40px 32px;
 
-  background-color: var(--CORF2);
-  border-radius: 12px;
-  text-align: center;
 
-  box-sizing: border-box;
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: stretch;
 }
 
+.card-link {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    
+    text-decoration: none;
+    color: inherit;
+}
+.card-link:hover {
+    border-radius: 9px;
+    box-shadow:4px 4px 7px var(--CORshadow);
+}
+.block {
+    height: 100%;
+    padding: 40px 32px;
+    
+    background-color: var(--CORF2);
+    border-radius: 12px;
+    text-align: center;
+    
+    box-sizing: border-box;
+}
+
+.card-link .card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-link .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(230, 36, 36, 0.723);
+}
+.iconCARD {
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.iconCARD svg {
+    width: 28px;
+    height: 28px;
+    color: #0f172a; 
+}
 
 h3 {
     font-weight: bold;
@@ -204,25 +247,9 @@ h3 {
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
+
 .cardsubtitulo {
     font-size: 1.1rem;
     font-weight: 300;
     color: var(--CORsecundaria);
-}
-.card-link {
-  display: block;
-  width: 100%;
-  max-width: 360px;
-
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link .card {
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-link .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(230, 36, 36, 0.723);
 }
