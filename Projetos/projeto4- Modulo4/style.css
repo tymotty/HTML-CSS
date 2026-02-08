@@ -148,7 +148,7 @@ p {
     padding-top: 0;
     margin-top: 0;
     width: 99vw;
-    height: 85vh;
+    height: 85vh; 
 
     background-color: var(--CORfontehover);
     
@@ -165,16 +165,17 @@ p {
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 60px;    
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: stretch;
 }
+
 .ancora {
     font-weight: 500;
     font-family: "Inter";
     font-size: 1rem;
-    color: var(--CORfontprincipal);
+    color: var(--CORsecundaria);
 }
 
 h2 {
@@ -184,13 +185,17 @@ h2 {
     color: var(--CORFP);
 }
 .block {
-    width: 100%;
-    max-width: 360px;
-    padding: 40px 32px;
-    background-color: var(--CORF2);
-    border-radius: 12px;
-    text-align: center;
+  height: 100%;
+  padding: 40px 32px;
+
+  background-color: var(--CORF2);
+  border-radius: 12px;
+  text-align: center;
+
+  box-sizing: border-box;
 }
+
+
 h3 {
     font-weight: bold;
     font-size: 1.3rem;
@@ -203,4 +208,21 @@ h3 {
     font-size: 1.1rem;
     font-weight: 300;
     color: var(--CORsecundaria);
+}
+.card-link {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link .card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-link .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(230, 36, 36, 0.723);
 }
