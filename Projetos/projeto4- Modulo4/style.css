@@ -10,8 +10,8 @@
     --CORfontprincipal:  #a1adc3; 
     --CORfontehover: #ffffff;
     --CORfundohover: #1a2643 ;
-
-    --CORF2: grey ;
+    --CORsecundaria:#43464f ;
+    --CORF2: #f7fbff ;
     --CORFP:#0F172B ;
     --CORshadow: #c8c8c8;
 }
@@ -145,7 +145,7 @@ p {
 /*--------------------------------Conteudo Sobre-----------------------------------*/
 /*---------------------------------------------------------------------------------*/
 .section01 {
-  padding-top: 0;
+    padding-top: 0;
     margin-top: 0;
     width: 99vw;
     height: 85vh;
@@ -164,6 +164,12 @@ p {
     text-align: center;
 }
 
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 60px;    
+}
 .ancora {
     font-weight: 500;
     font-family: "Inter";
@@ -178,21 +184,23 @@ h2 {
     color: var(--CORFP);
 }
 .block {
-    display: grid ;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    background-color:var(--CORF2) ;
-    gap: 15px;
-    height: 25vh;
-    width: 25vw;
+    width: 100%;
+    max-width: 360px;
+    padding: 40px 32px;
+    background-color: var(--CORF2);
+    border-radius: 12px;
+    text-align: center;
 }
-#conteiner01 {
-
+h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: "Inter";
+    color: var(--CORFP);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
-#conteiner02 {
-    
-}
-#conteiner03{
-    
+.cardsubtitulo {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--CORsecundaria);
 }
