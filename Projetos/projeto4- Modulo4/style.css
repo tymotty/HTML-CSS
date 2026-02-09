@@ -138,7 +138,10 @@ p {
 }
 
 .Botao01:hover {
-    background-color:var(--CORfundohover);
+    border-radius: 9px;
+    box-shadow:9px 9px 20px var(--CORshadow);
+    transition: 0.3s;
+    transform: translateY(-6px);
 
 }
 /*---------------------------------------------------------------------------------*/
@@ -180,6 +183,10 @@ h2 {
     color: var(--CORFP);
 }
 
+#subtitulosobre {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+}
 
 
 .cards {
@@ -196,10 +203,14 @@ h2 {
     
     text-decoration: none;
     color: inherit;
+    margin-top: 4vh;
 }
 .card-link:hover {
     border-radius: 9px;
     box-shadow:4px 4px 7px var(--CORshadow);
+    transition: 0.3s;
+    transform: translateY(-6px);
+  
 }
 .block {
     height: 100%;
@@ -212,14 +223,6 @@ h2 {
     box-sizing: border-box;
 }
 
-.card-link .card {
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-link .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(230, 36, 36, 0.723);
-}
 .iconCARD {
     width: 64px;
     height: 64px;
@@ -236,7 +239,7 @@ h2 {
 .iconCARD svg {
     width: 28px;
     height: 28px;
-    color: #0f172a; 
+    color: var(--CORFP); 
 }
 
 h3 {
@@ -249,7 +252,21 @@ h3 {
 }
 
 .cardsubtitulo {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--CORsecundaria);
+}
+/*---------------------------------------------------------------------------------*/
+/*--------------------------------Conteudo Sobre-----------------------------------*/
+/*---------------------------------------------------------------------------------*/
+.section02 {
+    width: 99vw;
+    height: 85vh;
+    background-color:var(--CORF2) ;
+   
+
+}
+#blockservico {
+    background-color: var(--CORfontehover);
+    width: ;
 }
