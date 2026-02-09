@@ -270,10 +270,10 @@ h3 {
     text-align: center;
 }
 .eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    color: #64748b;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 1rem;
+    color: var(--CORsecundaria);
 }
 
 .servicos h2 {
@@ -313,7 +313,7 @@ h3 {
   display: block;
   height: 4px;
   width: 100%;
-  background-color: #0f172a;
+  background-color: var(--CORFP);
   border-radius: 4px 4px 0 0;
   margin: -48px -32px 32px;
 }
@@ -330,5 +330,5 @@ h3 {
 .icon svg {
   width: 32px;
   height: 32px;
-  color: #0f172a;
+  color: var(--CORFP);
 }
