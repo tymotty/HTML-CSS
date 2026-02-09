@@ -259,14 +259,76 @@ h3 {
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------Conteudo Sobre-----------------------------------*/
 /*---------------------------------------------------------------------------------*/
-.section02 {
-    width: 99vw;
-    height: 85vh;
-    background-color:var(--CORF2) ;
-   
-
+.servicos {
+    background-color: #f5f8fb;
+    padding: 100px 0;
 }
-#blockservico {
-    background-color: var(--CORfontehover);
-    width: ;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+.eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.servicos h2 {
+    font-size: 2.6rem;
+    margin: 12px 0 16px;
+    color: #0f172a;
+}
+
+.descricao {
+    max-width: 600px;
+    margin: 0 auto 64px;
+    color: #475569;
+    font-size: 1.1rem;
+}
+
+.cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.card-servico {
+    background-color: #ffffff;
+    padding: 48px 32px;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-servico:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+.card-servico::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #0f172a;
+  border-radius: 4px 4px 0 0;
+  margin: -48px -32px 32px;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 32px;
+  height: 32px;
+  color: #0f172a;
 }
