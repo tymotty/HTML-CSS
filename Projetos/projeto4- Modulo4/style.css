@@ -334,3 +334,37 @@ h3 {
   height: 32px;
   color: var(--CORFP);
 }
+/*---------------------------------------------------------------------------------*/
+/*----------------------------------Depoimentos------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+.cards-Depoimento {
+    max-width: 99vw;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+    gap: 7%;
+}
+.card-Depoimento {
+    background-color: var(--CORF2);
+
+    padding-bottom: 40px;
+    padding-top:40px ;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    
+    width: 35vw;
+    height: 30vh;
+}
+#descricao-depoimento {
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--CORfundohover);
+    text-align: left;
+}
+.perfil {
+    width: 70px;
+    display: flex;
+
+}
