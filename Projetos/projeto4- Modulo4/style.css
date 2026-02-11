@@ -26,6 +26,8 @@ a {
 /*---------------------------------------------------------------------------------*/
 /*---------------------------Header e Navegacao do site----------------------------*/
 /*---------------------------------------------------------------------------------*/
+
+/*------Fundo------*/
 header {
     background-color:var(--CORFP) ;
     width: auto;
@@ -33,13 +35,12 @@ header {
     z-index: 1000;
     position: fixed;
 }
-
+/*------Navegacao------*/
 nav {
     display: flex;
     justify-content: center;
     height: 15vh;
 }
-
 nav > ul {
     display: flex;
     margin-left: 5vw;
@@ -49,7 +50,19 @@ nav > ul {
     padding: 0;
     align-items: center;
 }
+/*------Navegacao (link)------*/
+li > a {
+    color: var(--CORfontprincipal);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Inter";
+    font-size: 19px;
+}
+a:hover {
+    color: var(--CORfontehover);
 
+}
+/*------Navegacao (logo)------*/
 .logo {
     color: #ffffff;
     margin-right: 35vw ;
@@ -57,22 +70,11 @@ nav > ul {
     font-size: 35px;
 }
 
-li > a {
-    color: var(--CORfontprincipal);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: "Inter";
-    font-size: 19px;
-
-}
-
-a:hover {
-    color: var(--CORfontehover);
-
-}
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------Conteudo Inicio----------------------------------*/
 /*---------------------------------------------------------------------------------*/
+
+/*------Fundo------*/
 .Cinicio {
     padding-top: 0;
     margin-top: 0;
@@ -100,6 +102,7 @@ a:hover {
     text-align: center;
 
 }
+/*------Fundo (titulo)------*/
 #titulo{
     font-size: 3.5rem;
     font-family: "Inter";
@@ -108,6 +111,7 @@ a:hover {
     text-align: center;
     margin-bottom: 3.8vh;
 }
+/*------Fundo (paragrafo-configuracao/geral)------*/
 p {
     font-size: 1.3rem;
     font-family: "Inter";
@@ -115,9 +119,11 @@ p {
     color: var(--CORFP);
     text-align: center;
 }
+/*------Fundo (paragrafo)------*/
 #subtitulo {
     margin-bottom: 3.8vh;
 }
+/*------Fundo (Botao)------*/
 .Botao01 {
     display: inline-flex;
     align-items: center;
@@ -131,29 +137,24 @@ p {
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-
     
-
     background-color: var(--CORFP);
     
     border: var(--CORFP);
     border-radius: 9px;
     box-shadow:7px 7px 15px var(--CORshadow);
-    
 }
-
 .Botao01:hover {
     border-radius: 9px;
     box-shadow:9px 9px 20px var(--CORshadow);
     transition: 0.3s;
     transform: translateY(-5px);
-
 }
-
-
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------Conteudo Sobre-----------------------------------*/
 /*---------------------------------------------------------------------------------*/
+
+/*------Fundo------*/
 .section01 {
     padding-top: 0;
     margin-top: 0;
@@ -173,36 +174,31 @@ p {
     align-items: center;
     text-align: center;
 }
-
-
-
 .ancora {
     font-weight: 500;
     font-family: "Inter";
     font-size: 1rem;
     color: var(--CORsecundaria);
 }
-
 h2 {
     font-weight: bold;
     font-size: 2.5rem;
     font-family: "Inter";
     color: var(--CORFP);
 }
-
 #subtitulosobre {
     font-size: 1.2rem;
     margin-top: 2vh;
 }
 
-
+/*------Configuracao externa dos cards------*/
 .cards {
     display: flex;
     justify-content: center;
     gap: 32px;
     align-items: stretch;
 }
-
+/*------Configuracao dos cards------*/
 .card-link {
     display: block;
     width: 100%;
@@ -218,6 +214,7 @@ h2 {
     box-shadow: 0 1px 15px rgba(29, 44, 79, 0.12);
     transition: 0.3s;
 }
+/*------Configuracao interna dos cards------*/
 .block {
     height: 100%;
     padding: 40px 32px;
@@ -228,7 +225,22 @@ h2 {
     
     box-sizing: border-box;
 }
-
+/*------Configuracao interna dos cards (titulo)------*/
+h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: "Inter";
+    color: var(--CORFP);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+/*------Configuracao interna dos cards (sub-titulo)------*/
+.cardsubtitulo {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--CORsecundaria);
+}
+/*------Configuracao interna dos cards (Icone)------*/
 .iconCARD {
     width: 64px;
     height: 64px;
@@ -248,61 +260,50 @@ h2 {
     color: var(--CORFP); 
 }
 
-h3 {
-    font-weight: bold;
-    font-size: 1.3rem;
-    font-family: "Inter";
-    color: var(--CORFP);
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
-.cardsubtitulo {
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--CORsecundaria);
-}
 /*---------------------------------------------------------------------------------*/
 /*-------------------------------Conteudo Servico----------------------------------*/
 /*---------------------------------------------------------------------------------*/
+
+/*------Fundo------*/
 .servicos {
     background-color: #f5f8fb;
     padding: 100px 0;
 }
+.servicos > h2 {
+    font-size: 2.6rem;
+    margin: 12px 0 16px;
+    color: #0f172a;
+}
 #Servico {
     height: 85vh;
 }
+/*------Configuracao externa geral------*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     text-align: center;
 }
-.eyebrow {
-    font-weight: 500;
-    font-family: "Inter";
-    font-size: 1rem;
-    color: var(--CORsecundaria);
-}
-
-.servicos > h2 {
-    font-size: 2.6rem;
-    margin: 12px 0 16px;
-    color: #0f172a;
-}
-
 .descricao {
     max-width: 600px;
     margin: 0 auto 64px;
     color: #475569;
     font-size: 1.1rem;
 }
-
+/*------Cards------*/
+.eyebrow {
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 1rem;
+    color: var(--CORsecundaria);
+}
+/*------Configuracao externa dos cards------*/
 .cards-servicos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
+/*------Configuracao dos cards------*/
 .card-servico {
     background-color: #ffffff;
     padding: 48px 32px;
@@ -324,6 +325,7 @@ h3 {
   border-radius: 19px 19px 0 0;
   margin: -48px -28px 28px;
 }
+/*------Configuracao interna dos cards------*/
 .icon {
   width: 56px;
   height: 56px;
@@ -344,10 +346,12 @@ h3 {
 /*---------------------------------------------------------------------------------*/
 
 
+/*------Fundo------*/
 #Depoimento {
     height: 75vh;
 }
 
+/*------Configuracao externa dos cards------*/
 .cards-Depoimento {
     max-width: 99vw;
     display: flex;
@@ -356,6 +360,7 @@ h3 {
     gap: 7%;
 }
 
+/*------Configuracao dos cards------*/
 .card-Depoimento {
     background-color: var(--CORF2);
 
@@ -369,6 +374,7 @@ h3 {
     height: 30vh;
 }
 
+/*------Descricao------*/
 #descricao-depoimento {
     font-family: "Inter";
     font-size: 21px;
@@ -377,12 +383,14 @@ h3 {
     text-align: left; 
 }
 
+/*------Perfil miniatura externo------*/
 .perfil-info {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+/*------Perfil Miniatura------*/
 .perfil {
     width: 80px;
     height: 80;
@@ -390,14 +398,19 @@ h3 {
     object-fit: cover;
 }
 
+/*------Informacaoes perfil (Nome)------*/
 .info h4 {
     margin: 0;
     text-align: justify;
     font-size: 1.2rem;
 }
+/*------Informacaoes perfil (Cargo)------*/
 .info p {
     margin: 4px 0 0 0 ;
     color: #555;
     font-size: 0.9rem;
     text-align: left;
 }
+/*---------------------------------------------------------------------------------*/
+/*-------------------------------------Contato-------------------------------------*/
+/*---------------------------------------------------------------------------------*/
