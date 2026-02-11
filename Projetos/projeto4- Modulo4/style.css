@@ -13,7 +13,7 @@
     --CORfontehover: #ffffff;
     --CORfundohover: #1a2643 ;
     --CORsecundaria:#43464f ;
-    --CORF2: #f7fbff ;
+    --CORF2: #eff4f9ac ;
     --CORFP:#0F172B ;
     --CORshadow: #c8c8c8;
 }
@@ -77,7 +77,7 @@ a:hover {
     padding-top: 0;
     margin-top: 0;
     width: 99vw;
-    height: 85vh;
+    height: 100vh;
 
     background-image: 
         linear-gradient( to right, 
@@ -146,9 +146,11 @@ p {
     border-radius: 9px;
     box-shadow:9px 9px 20px var(--CORshadow);
     transition: 0.3s;
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 
 }
+
+
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------Conteudo Sobre-----------------------------------*/
 /*---------------------------------------------------------------------------------*/
@@ -156,7 +158,7 @@ p {
     padding-top: 0;
     margin-top: 0;
     width: 99vw;
-    height: 85vh; 
+    height: 100vh; 
 
     background-color: var(--CORfontehover);
     
@@ -261,11 +263,14 @@ h3 {
     color: var(--CORsecundaria);
 }
 /*---------------------------------------------------------------------------------*/
-/*--------------------------------Conteudo Sobre-----------------------------------*/
+/*-------------------------------Conteudo Servico----------------------------------*/
 /*---------------------------------------------------------------------------------*/
 .servicos {
     background-color: #f5f8fb;
     padding: 100px 0;
+}
+#Servico {
+    height: 85vh;
 }
 .container {
     max-width: 1200px;
@@ -296,7 +301,7 @@ h3 {
 .cards-servicos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 40px;
 }
 .card-servico {
     background-color: #ffffff;
@@ -337,6 +342,12 @@ h3 {
 /*---------------------------------------------------------------------------------*/
 /*----------------------------------Depoimentos------------------------------------*/
 /*---------------------------------------------------------------------------------*/
+
+
+#Depoimento {
+    height: 75vh;
+}
+
 .cards-Depoimento {
     max-width: 99vw;
     display: flex;
@@ -344,6 +355,7 @@ h3 {
     margin: 5rem;
     gap: 7%;
 }
+
 .card-Depoimento {
     background-color: var(--CORF2);
 
@@ -356,18 +368,36 @@ h3 {
     width: 35vw;
     height: 30vh;
 }
+
 #descricao-depoimento {
     font-family: "Inter";
     font-size: 21px;
     font-weight: 400;
     color: var(--CORfundohover);
-    text-align: left;
+    text-align: left; 
 }
-.perfil {
-    width: 70px;
-    display: flex;
 
-}
-.descricao-perfil {
+.perfil-info {
     display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.perfil {
+    width: 80px;
+    height: 80;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info h4 {
+    margin: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.info p {
+    margin: 4px 0 0 0 ;
+    color: #555;
+    font-size: 0.9rem;
+    text-align: left;
 }
