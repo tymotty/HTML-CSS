@@ -34,10 +34,12 @@ header {
     height: 15vh;
     z-index: 1000;
     position: fixed;
+
 }
 /*------Navegacao------*/
 nav {
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     height: 15vh;
 }
@@ -49,6 +51,9 @@ nav > ul {
     list-style: none;
     padding: 0;
     align-items: center;
+}
+li {
+    flex-grow: 1;
 }
 /*------Navegacao (link)------*/
 li > a {
@@ -194,18 +199,29 @@ h2 {
 /*------Configuracao externa dos cards------*/
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
     align-items: stretch;
+    
+}
+@media (max-width:768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-link {
+        max-width: 90%;
+    }
 }
 /*------Configuracao dos cards------*/
 .card-link {
-    display: block;
     width: 100%;
     max-width: 360px;
+    flex-grow: 1;
+    flex-basis: 200px;
     
-    text-decoration: none;
-    color: inherit;
+ 
     margin-top: 4vh;
 }
 .card-link:hover {
