@@ -7,39 +7,41 @@
     padding: 0;
 
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main {
     display: flex;
-
-    width: 100dvw;
-    height: 100dvh;
-    background-color: antiquewhite;
-    justify-content: center
 }
 section {
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-    padding: 50px;
-    margin: 9px;
+    margin: 5px;
+    
+    border-radius: 5px;
+    border: 3px solid rgb(86, 86, 86);
     width: 20vw;
-    height: 30vh;
 }
+h2 {
+    background-color: rgb(86, 86, 86);
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 10px;
 
+}
+ul {
+    padding: 20px;
+}
+.salary {
+    
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    
+}
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------------Junior-------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
 
-/*---------------------------------------------------------------------------------*/
-/*--------------------------------------Junior-------------------------------------*/
-/*---------------------------------------------------------------------------------*/
-
-
-/*---------------------------------------------------------------------------------*/
-/*--------------------------------------Senior-------------------------------------*/
-/*---------------------------------------------------------------------------------*/
-.senior {
-    width: 42vw;
-    flex-direction: ;
-
-}
