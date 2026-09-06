@@ -364,4 +364,29 @@ FORM
     .hero .container img{
         order: -1;
     }
+    .form-group{
+      display: block;
+      width: 100%;
+      flex:1,1;
+    }
+}
+@media (max-width:580px){
+  nav{
+    display: none;
+  }
+  .one,
+  .two,
+  .three{
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+  }
+
+  .menu-toggle {
+    width: 40PX;
+    height: 30px;
+    margin-right: 20px;
+  }
+
 }
